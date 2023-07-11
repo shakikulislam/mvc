@@ -1,1 +1,2 @@
-this is home from view
+Home
+<hr/>

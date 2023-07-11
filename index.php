@@ -1,10 +1,16 @@
 <?php
-include 'inc/header.php';
-include 'system/libs/main.php';
-include 'system/libs/sController.php';
-include 'system/libs/load.php';
-include 'system/libs/dbModel.php';
-include 'system/libs/database.php';
+
+spl_autoload_register(function($class){
+    include_once 'system/libs/'.$class.'.php';
+});
+include_once 'config/config.php';
+
+// include 'inc/header.php';
+// include 'system/libs/main.php';
+// include 'system/libs/sController.php';
+// include 'system/libs/load.php';
+// include 'system/libs/dbModel.php';
+// include 'system/libs/database.php';
 ?>
 
 
